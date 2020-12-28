@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Archivo";
+  src: url("../assets/fonts/Archivo.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Archivo";
+}
+
+.first__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding: 0;
+}
+.first__section .wrap__item {
+  width: 100%;
+}
+.first__section .wrap__item .first__img {
+  width: 100%;
+}
+.first__section .wrap__item h1 {
+  color: #F664B4;
+  font-size: 60px;
+}
+.first__section .wrap__item p {
+  color: rgba(82, 82, 82, 0.8);
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+.first__section .wrap__item a {
+  margin: 0 12px;
+  border: none;
+  min-width: 100px;
+  height: 50px;
+  background: #F6A664;
+  color: #525252;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.first__section .wrap__item a:hover {
+  background: linear-gradient(0deg, #F664B4, #F6A664);
+  color: white;
+  text-decoration: none;
+}
+.first__section .wrap__item a:focus {
+  outline: none;
+}
+
+.second__section {
+  margin: 37px 0;
+  padding: 0;
+}
+.second__section h1 {
+  color: #F664B4;
+  font-size: 60px;
+  text-align: center;
+}
+.second__section .wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.second__section .wrap .wrap__item .second__img {
+  width: 100%;
+  border-radius: 30px;
+}
+.second__section .wrap .wrap__item__two {
+  position: relative;
+  top: 80px;
+}
+.second__section .wrap .wrap__item__two p {
+  color: rgba(82, 82, 82, 0.8);
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+.second__section .wrap .wrap__item__two a {
+  margin: 12px 12px;
+  border: none;
+  min-width: 100px;
+  height: 50px;
+  background: #F6A664;
+  color: #525252;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.second__section .wrap .wrap__item__two a:hover {
+  background: linear-gradient(0deg, #F664B4, #F6A664);
+  color: white;
+}
+.second__section .wrap .wrap__item__two a:focus {
+  outline: none;
+}
+
+.third__section {
+  padding: 32px 0;
+}
+.third__section .wrap {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.third__section .wrap__item .third__img {
+  width: 100%;
+  border-radius: 30px;
+}
+.third__section .wrap__item__two {
+  position: relative;
+  top: 80px;
+}
+.third__section .wrap__item__two p {
+  color: rgba(82, 82, 82, 0.8);
+  font-size: 24px;
+  margin: 32px 0;
+}
+.third__section .wrap__item__two a {
+  margin: 12px 12px;
+  border: none;
+  min-width: 100px;
+  height: 50px;
+  background: #F6A664;
+  color: #525252;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.third__section .wrap__item__two a:hover {
+  background: linear-gradient(0deg, #F664B4, #F6A664);
+  color: white;
+  text-decoration: none;
+}
+.third__section .wrap__item__two a:focus {
+  outline: none;
+}
+
+.four__section {
+  padding: 0;
+}
+.four__section .wrap {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.four__section .wrap .wrap__item .four__img {
+  border-radius: 30px;
+}
+.four__section .wrap .wrap__item__two {
+  position: relative;
+  top: 50px;
+}
+.four__section .wrap .wrap__item__two p {
+  color: rgba(82, 82, 82, 0.8);
+  font-size: 24px;
+}
+.four__section .wrap .wrap__item__two .four__img__two {
+  border-radius: 30px;
+}
+
+.rabbit__container {
+  margin-bottom: 50px;
+  top: 50px;
+  position: relative;
+}
+.rabbit__container .rabbit__ground {
+  width: 100%;
+}
+.rabbit__container .rabbit {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.five__section {
+  margin: 96px 0;
+}
+.five__section h1 {
+  color: #F664B4;
+  font-size: 60px;
+  text-align: center;
+}
+
+/* responsive design */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .first__section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .wrap {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .second__section .wrap .wrap__item__two {
+    top: 40px;
+  }
+
+  .third__section .wrap__item__two {
+    margin: 24px 0;
+    position: relative;
+    top: 0;
+  }
+
+  .four__section .wrap .wrap__item__two {
+    position: relative;
+    top: 0;
+  }
+
+  .four__section .wrap .wrap__item .four__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .four__section .wrap .wrap__item__two .four__img__two {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

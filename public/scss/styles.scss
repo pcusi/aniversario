@@ -1,0 +1,219 @@
+@import "variables";
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 12px;
+  box-sizing: border-box;
+}
+body {
+  font-family: $archivo;
+}
+.first__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding: 0;
+  .wrap__item {
+    width: 100%;
+    .first__img {
+      width: 100%;
+    }
+    h1 {
+      color: $cl-triada-2;
+      font-size: 60px;
+    }
+    p {
+      color: $cl-texto;
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+    a {
+      margin: 0 12px;
+      border: none;
+      min-width: 100px;
+      height: 50px;
+      background: $bg-compl;
+      color: $cl-texto-2;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 15px;
+      text-decoration: none;
+      &:hover {
+        background: linear-gradient(0deg, $cl-triada-2, $bg-compl);
+        color: white;
+        text-decoration: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.second__section {
+  margin: 37px 0;
+  padding: 0;
+  h1 {
+    color: $cl-triada-2;
+    font-size: 60px;
+    text-align: center;
+  }
+  .wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    .wrap__item {
+      .second__img {
+        width: 100%;
+        border-radius: 30px;
+      }
+    }
+    .wrap__item__two {
+      position: relative;
+      top: 80px;
+      p {
+        color: $cl-texto;
+        font-size: 24px;
+        margin-bottom: 32px;
+      }
+      a {
+        margin: 12px 12px;
+        border: none;
+        min-width: 100px;
+        height: 50px;
+        background: $bg-compl;
+        color: $cl-texto-2;
+        font-weight: bold;
+        font-size: 24px;
+        border-radius: 15px;
+        cursor: pointer;
+        &:hover {
+          background: linear-gradient(0deg, $cl-triada-2, $bg-compl);
+          color: white;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+.third__section {
+  padding: 32px 0;
+  .wrap {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  .wrap__item {
+    .third__img {
+      width: 100%;
+      border-radius: 30px;
+    }
+  }
+  .wrap__item__two {
+    position: relative;
+    top: 80px;
+    p {
+      color: $cl-texto;
+      font-size: 24px;
+      margin: 32px 0;
+    }
+    a {
+      margin: 12px 12px;
+      border: none;
+      min-width: 100px;
+      height: 50px;
+      background: $bg-compl;
+      color: $cl-texto-2;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 15px;
+      text-decoration: none;
+      &:hover {
+        background: linear-gradient(0deg, $cl-triada-2, $bg-compl);
+        color: white;
+        text-decoration: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.four__section {
+  padding: 0;
+  .wrap {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    .wrap__item {
+      .four__img {
+        border-radius: 30px;
+      }
+    }
+    .wrap__item__two {
+      position: relative;
+      top: 50px;
+      p {
+        color: $cl-texto;
+        font-size: 24px;
+      }
+      .four__img__two {
+        border-radius: 30px;
+      }
+    }
+  }
+}
+.rabbit__container {
+  margin-bottom: 50px;
+  top: 50px;
+  position: relative;
+  .rabbit__ground {
+    width: 100%;
+  }
+  .rabbit {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+.five__section {
+  margin: 96px 0;
+  h1 {
+    color: $cl-triada-2;
+    font-size: 60px;
+    text-align: center;
+  }
+}
+
+/* responsive design */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .first__section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .wrap {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .second__section .wrap .wrap__item__two {
+    top: 40px;
+  }
+  .third__section .wrap__item__two {
+    margin: 24px 0;
+    position: relative;
+    top: 0;
+  }
+  .four__section .wrap .wrap__item__two {
+    position: relative;
+    top: 0;
+  }
+  .four__section .wrap .wrap__item .four__img {
+    display: block;
+    margin: 0 auto;
+  }
+  .four__section .wrap .wrap__item__two .four__img__two {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
